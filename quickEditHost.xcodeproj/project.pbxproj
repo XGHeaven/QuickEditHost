@@ -251,6 +251,7 @@
 		8A9DCD401DB77939007EB1D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = quickEditHost/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
@@ -263,6 +264,7 @@
 		8A9DCD411DB77939007EB1D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = quickEditHost/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
