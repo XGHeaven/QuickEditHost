@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSHumanReadableCopyright</key>
@@ -23,9 +23,9 @@
 	<key>NSMainNibFile</key>
 	<string>quickEditHost</string>
 	<key>NSPrefPaneIconFile</key>
-	<string>quickEditHost.tiff</string>
+	<string>quickEditHost.png</string>
 	<key>NSPrefPaneIconLabel</key>
-	<string>quickEditHost</string>
+	<string>Quick Edit Host</string>
 	<key>NSPrincipalClass</key>
 	<string>quickEditHost</string>
 </dict>
