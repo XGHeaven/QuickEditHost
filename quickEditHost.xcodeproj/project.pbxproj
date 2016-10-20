@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A89E7B01DB8F57300726E26 /* quickEditHost.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A89E7AF1DB8F57300726E26 /* quickEditHost.png */; };
-		8A9DCD381DB77939007EB1D3 /* quickEditHost.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8A9DCD371DB77939007EB1D3 /* quickEditHost.tiff */; };
 		8A9DCD3B1DB77939007EB1D3 /* quickEditHost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9DCD391DB77939007EB1D3 /* quickEditHost.xib */; };
 		8A9DCD441DB78893007EB1D3 /* quickEditHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9DCD431DB78893007EB1D3 /* quickEditHost.swift */; };
 		8AD31D4D1DB8EE9500361446 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8AD31D4C1DB8EE9500361446 /* README.md */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		8A89E7AF1DB8F57300726E26 /* quickEditHost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quickEditHost.png; sourceTree = "<group>"; };
 		8A9DCD301DB77939007EB1D3 /* quickEditHost.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickEditHost.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A9DCD371DB77939007EB1D3 /* quickEditHost.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = quickEditHost.tiff; sourceTree = "<group>"; };
 		8A9DCD3A1DB77939007EB1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/quickEditHost.xib; sourceTree = "<group>"; };
 		8A9DCD3C1DB77939007EB1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9DCD421DB78893007EB1D3 /* quickEditHost-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quickEditHost-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 			children = (
 				8A89E7AF1DB8F57300726E26 /* quickEditHost.png */,
 				8A9DCD431DB78893007EB1D3 /* quickEditHost.swift */,
-				8A9DCD371DB77939007EB1D3 /* quickEditHost.tiff */,
 				8A9DCD391DB77939007EB1D3 /* quickEditHost.xib */,
 				8A9DCD3C1DB77939007EB1D3 /* Info.plist */,
 				8A9DCD421DB78893007EB1D3 /* quickEditHost-Bridging-Header.h */,
@@ -136,7 +133,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9DCD381DB77939007EB1D3 /* quickEditHost.tiff in Resources */,
 				8A89E7B01DB8F57300726E26 /* quickEditHost.png in Resources */,
 				8A9DCD3B1DB77939007EB1D3 /* quickEditHost.xib in Resources */,
 			);
