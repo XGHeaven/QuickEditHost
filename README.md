@@ -12,7 +12,7 @@ So, WE NEED A QUICK&EASY&POWERFUL PRODUCT.
 
 ## Good
 
-![preview](pimg/preview.tiff)
+![preview](https://raw.githubusercontent.com/XGHeaven/QuickEditHost/master/pimg/preview.tiff)
 
 * with gui
 * as System Preference Pane, quick to install, quick to start, quick to edit
