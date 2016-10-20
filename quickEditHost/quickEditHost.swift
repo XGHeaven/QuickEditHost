@@ -15,6 +15,8 @@ class quickEditHost: NSPreferencePane {
     
     @IBOutlet weak var saveButton: NSButton!
     
+    @IBOutlet weak var statusLabel: NSTextField!
+    
     let hostPath = "/etc/hosts"
     
     override func mainViewDidLoad() {
