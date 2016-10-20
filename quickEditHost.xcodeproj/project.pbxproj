@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A9DCD341DB77939007EB1D3 /* quickEditHost.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9DCD331DB77939007EB1D3 /* quickEditHost.h */; };
-		8A9DCD361DB77939007EB1D3 /* quickEditHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9DCD351DB77939007EB1D3 /* quickEditHost.m */; };
 		8A9DCD381DB77939007EB1D3 /* quickEditHost.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8A9DCD371DB77939007EB1D3 /* quickEditHost.tiff */; };
 		8A9DCD3B1DB77939007EB1D3 /* quickEditHost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9DCD391DB77939007EB1D3 /* quickEditHost.xib */; };
+		8A9DCD441DB78893007EB1D3 /* quickEditHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9DCD431DB78893007EB1D3 /* quickEditHost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A9DCD301DB77939007EB1D3 /* quickEditHost.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickEditHost.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A9DCD331DB77939007EB1D3 /* quickEditHost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quickEditHost.h; sourceTree = "<group>"; };
-		8A9DCD351DB77939007EB1D3 /* quickEditHost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quickEditHost.m; sourceTree = "<group>"; };
 		8A9DCD371DB77939007EB1D3 /* quickEditHost.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = quickEditHost.tiff; sourceTree = "<group>"; };
 		8A9DCD3A1DB77939007EB1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/quickEditHost.xib; sourceTree = "<group>"; };
 		8A9DCD3C1DB77939007EB1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9DCD421DB78893007EB1D3 /* quickEditHost-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quickEditHost-Bridging-Header.h"; sourceTree = "<group>"; };
+		8A9DCD431DB78893007EB1D3 /* quickEditHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quickEditHost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +51,11 @@
 		8A9DCD321DB77939007EB1D3 /* quickEditHost */ = {
 			isa = PBXGroup;
 			children = (
-				8A9DCD331DB77939007EB1D3 /* quickEditHost.h */,
-				8A9DCD351DB77939007EB1D3 /* quickEditHost.m */,
+				8A9DCD431DB78893007EB1D3 /* quickEditHost.swift */,
 				8A9DCD371DB77939007EB1D3 /* quickEditHost.tiff */,
 				8A9DCD391DB77939007EB1D3 /* quickEditHost.xib */,
 				8A9DCD3C1DB77939007EB1D3 /* Info.plist */,
+				8A9DCD421DB78893007EB1D3 /* quickEditHost-Bridging-Header.h */,
 			);
 			path = quickEditHost;
 			sourceTree = "<group>";
@@ -68,7 +67,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9DCD341DB77939007EB1D3 /* quickEditHost.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +102,7 @@
 				TargetAttributes = {
 					8A9DCD2F1DB77939007EB1D3 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -143,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9DCD361DB77939007EB1D3 /* quickEditHost.m in Sources */,
+				8A9DCD441DB78893007EB1D3 /* quickEditHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +251,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = quickEditHost/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xgheaven.quickEditHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quickEditHost/quickEditHost-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Debug;
@@ -265,11 +269,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = quickEditHost/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xgheaven.quickEditHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quickEditHost/quickEditHost-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Release;
@@ -293,6 +301,7 @@
 				8A9DCD411DB77939007EB1D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
